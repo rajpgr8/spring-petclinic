@@ -11,7 +11,13 @@ Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) applicatio
 git clone https://github.com/spring-projects/spring-petclinic.git
 cd spring-petclinic
 ./mvnw package
+
+curl -L https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent-all.jar --output opentelemetry-javaagent-all.jar
+
 java -jar target/*.jar
+OR
+docker build -t spring-petclinic . && \
+docker tag spring-petclinic docker.io/<>/spring-petclinic
 ```
 
 You can then access petclinic here: http://localhost:8080/
