@@ -18,6 +18,9 @@ docker push docker.io/<>/spring-petclinic
 ```
 
 You can then access petclinic here: http://localhost:8080/
+http://localhost:8080/actuator/health
+http://localhost:8080/actuator/metrics
+http://localhost:8080/actuator/prometheus
 
 ## Database configuration
 
