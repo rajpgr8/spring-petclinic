@@ -10,8 +10,6 @@ curl -L https://github.com/open-telemetry/opentelemetry-java-instrumentation/rel
 java -jar target/*.jar
 OR
 
-./mvnw spring-boot:build-image
-OR
 docker build -t spring-petclinic .
 docker tag spring-petclinic docker.io/<>/spring-petclinic 
 docker push docker.io/<>/spring-petclinic
